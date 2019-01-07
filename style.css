@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1477951233099-d2c5fbd878ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=22a6241e2511ef96bb690e4be3a9f015&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: bisque;
+    position: relative;
+    font-family: 'Righteous', cursive;
+}
+
+header {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+h1{
+    display: block;
+    font-size: 60px;
+    padding: 60px;
+    color: black;
+}
+
+table{
+    size: 20px;
+    height: 100%;
+    width: 300px;
+}
+
+#boardContainer{
+    display: inline-block;
+    margin: 60px auto;
+    border: 5px solid    rgba(6, 43, 78 ,1);
+    background-color: rgba(4, 134, 255, 0.5);
+}
+
+#board{
+    display: inline-grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+.cardWrapper{
+    border: 1px solid rgba(6, 43, 78 ,1);
+}
+
+.card{
+    opacity: 0;
+}
+
+.flipCard{
+    transform: scaleX(1);  
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.matched{
+    opacity: 0.5;
+}
+
+img{
+    height: 180px;
+    width: 150px;
+    padding: 7px;
+}
+
+#btnNewGame{
+    width: 150px;
+    background-color: lightblue;
+    border-radius: 40%;
+    color: black;
+    font-weight: bold;
+    border: 1px black dotted;
+}
+
+#modalWin{
+    padding-top: 20px;
+    display: none;
+    font-size: 40px;
+    position: absolute;
+    width: 50%;
+    height: 75%;
+    background-image: url('https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/34/2015/11/Champagne-Andy-Roberts-GettyImages-151814127-630x417.jpg');
+    background-size: cover;
+    top: 31%;
+    left: 24%;
+}
+
+#btnNextLevel{
+    position: absolute;
+    bottom: 12%;
+    left: 40%;
+    width: 180px;
+    height: 100px;
+    border-radius: 40%;
+    background-color:#81b7d1;
+    font-size: 20px;
+    font-weight: bold;   
+}
+
+@media (max-width:950px){
+    .hideInMobile {
+        display:none;
+    }
+}
+@media (max-width:620px){
+    #btnNewGame {
+        display:none;
+    }
+    #header{
+        justify-content: center;
+    }
+}

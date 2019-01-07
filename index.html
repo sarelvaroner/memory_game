@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>memory game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+</head>
+<body>
+    <h1>memory cars game</h1>
+    <header>
+        <div class='hideInMobile'><table id ='highScores'></table></div>
+        <div class='hideInMobile'><h3>score</h3><span id="score">00</span></div>
+        <div class='hideInMobile'><h3>moves</h3><span id="moves">00</span></div>
+        <div class='hideInMobile'><h3>matches</h3><span id="matches">00</span></div>
+        <div><h3>time</h3><span id="time">00</span></div>
+        <div><button id='btnNewGame'><div>new game</button></div>
+    </header>
+    <main id="boardContainer">
+        <section id="board"></section>
+    </main>
+    <div id= 'modalContainer' >
+        <span id="modalWin">
+            congratulation!!!  you win !<br>
+            your score is: 
+            <span id="modalScore"></span>
+            <button id= 'btnNextLevel'>next level</button>
+        </span>
+    </div>
+    
+   
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
